@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     //NavMeshAgent agent;
     public List<Transform> waypoints;
     int actualWaypoint = 0;
-    public float speed = 5f;
+    public float speed = 3f;
     bool isMoving;
 
 
