@@ -6,7 +6,7 @@ public class Enemymov : MonoBehaviour
 {
     private bool isMoving;
     private float speed;
-    private float totalSeconds = 0.5f;
+    //private float totalSeconds = 0.5f;
     public Vector3 targetPos;
     private float WaitForSeconds = 0.5f;
     private float disCube = 2;

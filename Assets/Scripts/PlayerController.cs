@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         if (!isMoving && Input.GetKeyDown(KeyCode.UpArrow))
         {
             // Rotacion al moverse
-            Vector3 RotForward = new Vector3(-90f, 0f, 0f);
+            Vector3 RotForward = new Vector3(0f, 0f, 0f);
             transform.rotation = Quaternion.Euler(RotForward);
             targetPos = transform.position + totalDistance * Vector3.forward;
 
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
 
         if (!isMoving && Input.GetKeyDown(KeyCode.DownArrow))
         {
-            Vector3 RotBack = new Vector3(-90f, 0f, 180f);
+            Vector3 RotBack = new Vector3(0f, 180f, 0f);
             transform.rotation = Quaternion.Euler(RotBack);
             targetPos = transform.position + totalDistance * Vector3.back;
 
@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
 
         if (!isMoving && Input.GetKeyDown(KeyCode.RightArrow))
         {
-            Vector3 RotRight = new Vector3(-90f, 0f, 90f);
+            Vector3 RotRight = new Vector3(0f, 90f, 0f);
             transform.rotation = Quaternion.Euler(RotRight);
             targetPos = transform.position + totalDistance * Vector3.right;
 
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
 
         if (!isMoving && Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            Vector3 RotLeft = new Vector3(-90f, 0f, -90f);
+            Vector3 RotLeft = new Vector3(0f, -90f, 0f);
             transform.rotation = Quaternion.Euler(RotLeft);
             targetPos = transform.position + totalDistance * Vector3.left;
 
