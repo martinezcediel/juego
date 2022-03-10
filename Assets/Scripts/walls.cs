@@ -15,7 +15,7 @@ public class walls : MonoBehaviour
         // Bajar la altura de wall para que coincida con la Target Position
         foreach(GameObject w in wallArray)
         {
-            wallposition.Add(w.transform.position + 1f * Vector3.up);
+            wallposition.Add(w.transform.position + 0f * Vector3.up);
         }
     }
 
