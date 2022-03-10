@@ -19,8 +19,13 @@ public class walls : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        
+    }
 
-   public bool isValidPosition(Vector3 targetPos)
+
+    public bool isValidPosition(Vector3 targetPos)
    { 
        if(wallposition.Contains(targetPos))
        {  

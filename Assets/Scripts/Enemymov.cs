@@ -12,12 +12,19 @@ public class Enemymov : MonoBehaviour
     private float disCube = 2;
     public int actualWaypoint = 1;
 
+    private walls wallsscript; // Llamo al script de walls
+
+
     public GameObject[] wayPoints;
 
     // Start is called before the first frame update
     void Start()
     {
+        wallsscript = FindObjectOfType<walls>();
+       
+
         transform.position = wayPoints[0].transform.position;
+
 
         targetPos = wayPoints[actualWaypoint].transform.position;
 
@@ -50,6 +57,10 @@ public class Enemymov : MonoBehaviour
 
         // Si estábamos quietos, iniciamos movimiento
         isMoving = true;
+
+        wallsscript.wallposition.Remove(transform.position);
+        wallsscript.wallposition.Add(targetPosition);
+      
 
         yield return new WaitForSeconds(WaitForSeconds);
 

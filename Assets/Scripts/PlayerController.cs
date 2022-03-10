@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Vector3 targetPos;
     private float speed;
-    private float totalSeconds = 0.5f; // Duración total del movimiento
+    private float totalSeconds = 0.2f; // Duración total del movimiento
     private float totalDistance = 2; // 4m a recorrer
     private bool isMoving;
     private walls wallsscript; // Llamo al script de walls
