@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Vision : MonoBehaviour
 {
@@ -8,9 +9,9 @@ public class Vision : MonoBehaviour
     {
         if (col.gameObject.tag == "vision")
         {
-            Debug.Log("tocado");
-            Destroy(col.gameObject);
+            
             Destroy(this.gameObject);
+            SceneManager.LoadScene("escena2");
         }
     }
 }

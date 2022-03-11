@@ -36,7 +36,7 @@ public class StartOptions : MonoBehaviour {
 
 
 	public void StartButtonClicked()
-	{*
+	{
 		if (changeMusicOnStart) 
 		{
 			playMusic.FadeDown(fadeColorAnimationClip.length);
